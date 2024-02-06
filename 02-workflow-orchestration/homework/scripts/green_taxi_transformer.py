@@ -1,4 +1,5 @@
 import pandas as pd
+import re
 
 if 'transformer' not in globals():
     from mage_ai.data_preparation.decorators import transformer
@@ -8,17 +9,22 @@ if 'test' not in globals():
 
 @transformer
 def transform(data, *args, **kwargs):
-    passenger_count_is_zero = data['passenger_count'] > 0
-    trip_distance_is_zero = data['trip_distance'] == 0
+    # Passenger count is greater than 0 and the trip distance is greater than zero
+    passenger_count_and_trip_distance_greater_than_zero = (data['passenger_count'] > 0) & (data['trip_distance'] > 0)
+    data = data[passenger_count_and_trip_distance_greater_than_zero]
 
     data['lpep_pickup_datetime'] = pd.to_datetime(data['lpep_pickup_datetime'])
     data.rename(columns={col: camel_to_snake(col) for col in data.columns}, inplace=True)
 
-    return data[~(passenger_count_is_zero | trip_distance_is_zero)]
+    return data
 
 
 def camel_to_snake(column_name):
-    return ''.join(['_' + i.lower() if i.isupper() else i for i in column_name]).lstrip('_')
+    """
+    Convert Camel Case to Snake Case
+    """
+    s1 = re.sub('(.)([A-Z][a-z]+)', r'\1_\2', column_name)
+    return re.sub('([a-z0-9])([A-Z])', r'\1_\2', s1).lower()
 
 
 @test
