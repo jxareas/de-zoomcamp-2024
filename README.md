@@ -65,7 +65,7 @@ This is the general top level directory structure of this repository:
 | ID  | Module                               | Progress           | Deadline           | 
 |-----|--------------------------------------|--------------------|--------------------|
 | 1   | Introduction & Prerequisites        | :white_check_mark: | 29/01/2024         |
-| 2   | Workflow Orchestration              | :x:                | 05/02/2024         |
+| 2   | Workflow Orchestration              | :white_check_mark: | 05/02/2024         |
 | 3   | DLT Workshop                         | :x:                | 15/02/2024         |
 | 4   | Data Warehouse                       | :x:                | 12/02/2024         |
 | 5   | Analytics Engineering                | :x:                | 22/02/2024         |
