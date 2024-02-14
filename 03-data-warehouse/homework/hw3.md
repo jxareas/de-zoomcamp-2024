@@ -21,7 +21,7 @@ Question 1: What is count of records for the 2022 Green Taxi Data??
 - 1,936,423
 - 253,647
 
-```bigquery
+```sql
 SELECT COUNT(*)
 FROM ny_taxi.green_taxi_trips
 ```
@@ -36,7 +36,7 @@ What is the estimated amount of data that will be read when this query is execut
 - 0 MB for the External Table and 0MB for the Materialized Table
 - 2.14 MB for the External Table and 0MB for the Materialized Table
 
-```bigquery
+```sql
 SELECT * FROM `zoomcamp-414106.ny_taxi.nytaxi_external_green_nytaxi_data_non_partitioned`;
 
 SELECT * FROM `zoomcamp-414106.ny_taxi.green_taxi_trips`;
@@ -51,7 +51,7 @@ How many records have a fare_amount of 0?
 - 112
 - **1,622**
 
-```bigquery
+```sql
 SELECT COUNT(*)
 FROM ny_taxi.green_taxi_trips
 WHERE fare_amount = 0
