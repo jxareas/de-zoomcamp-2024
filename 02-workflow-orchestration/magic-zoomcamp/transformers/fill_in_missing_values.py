@@ -6,6 +6,7 @@ if 'transformer' not in globals():
 if 'test' not in globals():
     from mage_ai.data_preparation.decorators import test
 
+
 def select_number_columns(df: DataFrame) -> DataFrame:
     return df[['Age', 'Fare', 'Parch', 'Pclass', 'SibSp', 'Survived']]
 

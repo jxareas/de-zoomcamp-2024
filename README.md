@@ -62,21 +62,21 @@ This is the general top level directory structure of this repository:
 ```
 
 ## ⏳ Deadlines ⏳
-| ID  | Module                               | Progress           | Deadline           | 
-|-----|--------------------------------------|--------------------|--------------------|
-| 1   | Introduction & Prerequisites        | :white_check_mark: | 29/01/2024         |
-| 2   | Workflow Orchestration              | :white_check_mark: | 05/02/2024         |
-| 3   | DLT Workshop                         | :x:                | 15/02/2024         |
-| 4   | Data Warehouse                       | :white_check_mark: | 12/02/2024         |
-| 5   | Analytics Engineering                | :x:                | 22/02/2024         |
-| 6   | Batch Processing                     | :x:                | 04/03/2024         |
-| 7   | Streaming                            | :x:                | 15/03/2024         |
-| 8   | RisingWave Workshop                  | :x:                | 18/03/2024         |
-| 9   | Project (Attempt 1)                  | :x:                | 01/04/2024         |
-| 10  | Project Evaluation (Attempt 1)       | :x:                | 08/04/2024         |
-| 11  | Project (Attempt 2)                  | :x:                | 15/04/2024         |
-| 12  | Project Evaluation (Attempt 2)       | :x:                | 29/04/2024         |
 
+| ID | Module                         | Progress           | Deadline   | 
+|----|--------------------------------|--------------------|------------|
+| 1  | Introduction & Prerequisites   | :white_check_mark: | 29/01/2024 |
+| 2  | Workflow Orchestration         | :white_check_mark: | 05/02/2024 |
+| 3  | DLT Workshop                   | :x:                | 15/02/2024 |
+| 4  | Data Warehouse                 | :white_check_mark: | 12/02/2024 |
+| 5  | Analytics Engineering          | :x:                | 22/02/2024 |
+| 6  | Batch Processing               | :x:                | 04/03/2024 |
+| 7  | Streaming                      | :x:                | 15/03/2024 |
+| 8  | RisingWave Workshop            | :x:                | 18/03/2024 |
+| 9  | Project (Attempt 1)            | :x:                | 01/04/2024 |
+| 10 | Project Evaluation (Attempt 1) | :x:                | 08/04/2024 |
+| 11 | Project (Attempt 2)            | :x:                | 15/04/2024 |
+| 12 | Project Evaluation (Attempt 2) | :x:                | 29/04/2024 |
 
 ## 🚀 Modules 🚀
 
@@ -125,7 +125,6 @@ This is the general top level directory structure of this repository:
 * Deployment to the cloud and locally
 * Visualizing the data with google data studio and metabase
 
-
 ### [Module 5: Batch processing](05-batch/)
 
 * Batch processing
@@ -156,14 +155,24 @@ Putting everything learned to practice.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 📝 Requirements 📝
+## 🛠️ Technologies 🛠️
 
-To be defined...
+- **Python:** Versatile and widely-used programming language for web development, data science, and automation.
+- **PostgreSQL:** Open-source relational database management system known for its extensibility.
+- **Docker:** Platform for developing, shipping, and running applications in containers.
+- **Mage:** Workflow Orchestrator that builds real-time and batch pipelines to transform data.
+- **BigQuery:** Fully-managed, serverless data warehouse on Google Cloud Platform (GCP).
+- **GCP:** Google Cloud Platform, a suite of cloud computing services.
+- **dbt:** Analytics engineering tool for transforming data in your warehouse.
+- **Apache Spark:** Open-source distributed computing system for big data processing.
+- **dltHub:** An open source Python library that makes data loading easy.
+- **RisingWave:** Stream processing platform that utilizes SQL to enhance data analysis
+- **Apache Kafka:** Distributed event streaming platform for building real-time data pipelines.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 📜 License 📜
-<!-- Change this license for the one used in your project -->
+
 ```
 MIT License
 
@@ -187,6 +196,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 

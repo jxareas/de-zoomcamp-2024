@@ -68,19 +68,27 @@ ENTRYPOINT ["bash"]
 To create a container from the provided Dockerfile, follow these steps:
 
 1. Create the Dockerfile
-  * Copy the Dockerfile content into a file named `Dockerfile`
+
+* Copy the Dockerfile content into a file named `Dockerfile`
+
 2. Build the Docker image
-  * Open a terminal and navigate to the directory containing your Dockerfile and run:
-    ```bash
-    docker build -t my-python-container .
-    ```
+
+* Open a terminal and navigate to the directory containing your Dockerfile and run:
+  ```bash
+  docker build -t my-python-container .
+  ```
+
 3. Run the Docker image
-  * Once the image is built, you can create and run a container with the following command:
-    ```bash
-    docker run -it my-python-container
-    ```
+
+* Once the image is built, you can create and run a container with the following command:
+  ```bash
+  docker run -it my-python-container
+  ```
 
 ## Other Docker Concepts
-- **Networking**: Docker facilitates communication between containers and the host system, crucial for distributed systems and microservices architecture.
-- **Volumes**: Docker volumes enable data persistence beyond the container lifecycle, vital for databases and file storage.
+
+- **Networking**: Docker facilitates communication between containers and the host system, crucial for distributed
+  systems and microservices architecture.
+- **Volumes**: Docker volumes enable data persistence beyond the container lifecycle, vital for databases and file
+  storage.
 - **Docker Compose**: For multi-container applications, Docker Compose simplifies configuration and orchestration.

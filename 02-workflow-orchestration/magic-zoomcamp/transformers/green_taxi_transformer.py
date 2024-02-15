@@ -12,7 +12,7 @@ def transform(data, *args, **kwargs):
     # Passenger count is greater than 0 and the trip distance is greater than zero
     passenger_count_and_trip_distance_greater_than_zero = (data['passenger_count'] > 0) & (data['trip_distance'] > 0)
     data = data[passenger_count_and_trip_distance_greater_than_zero]
-    
+
     data['lpep_pickup_datetime'] = pd.to_datetime(data['lpep_pickup_datetime'])
     data.rename(columns={col: camel_to_snake(col) for col in data.columns}, inplace=True)
 
