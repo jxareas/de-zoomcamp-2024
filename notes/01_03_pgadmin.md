@@ -19,33 +19,41 @@ user-friendly interface to interact with your PostgreSQL databases and perform v
 ## Key Features
 
 1. **Database Management:**
-  - Create, modify, and delete databases.
-  - Manage database schemas and tables.
+
+- Create, modify, and delete databases.
+- Manage database schemas and tables.
 
 2. **Query Tool:**
-  - Execute SQL queries with syntax highlighting and autocompletion.
+
+- Execute SQL queries with syntax highlighting and autocompletion.
 
 3. **Server Configuration:**
-  - Configure PostgreSQL server settings.
+
+- Configure PostgreSQL server settings.
 
 4. **User and Role Management:**
-  - Manage users, roles, and permissions.
+
+- Manage users, roles, and permissions.
 
 5. **Backup and Restore:**
-  - Easily backup and restore databases.
+
+- Easily backup and restore databases.
 
 ## Getting Started
 
 To get started with PGAdmin, follow these steps:
 
 1. **Installation:**
-  - Download and install PGAdmin from the official website [link](https://www.pgadmin.org/).
+
+- Download and install PGAdmin from the official website [link](https://www.pgadmin.org/).
 
 2. **Connection Setup:**
-  - Launch PGAdmin and set up connections to your PostgreSQL servers.
+
+- Launch PGAdmin and set up connections to your PostgreSQL servers.
 
 3. **Exploring the Interface:**
-  - Familiarize yourself with the main features such as the Object Browser, Query Tool, and Dashboard.
+
+- Familiarize yourself with the main features such as the Object Browser, Query Tool, and Dashboard.
 
 ## Install pgAdmin with Docker
 
