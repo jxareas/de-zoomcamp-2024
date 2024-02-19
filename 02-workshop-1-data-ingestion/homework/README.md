@@ -1,9 +1,10 @@
 ## Workshop 1 - Data Loading - Homework
 
 Deadline: February 18th 2024
+
 Homework Submission: https://courses.datatalks.club/de-zoomcamp-2024/homework/workshop1
 
-# Question 1
+## Question 1
 
 What is the sum of the outputs of the generator for limit = 5?
 
