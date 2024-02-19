@@ -1,8 +1,10 @@
 ## Week 2 Homework
 
-ATTENTION: At the end of the submission form, you will be required to include a link to your GitHub repository or other public code-hosting site. This repository should contain your code for solving the homework. If your solution includes code that is not in file format, please include these directly in the README file of your repository.
+ATTENTION: At the end of the submission form, you will be required to include a link to your GitHub repository or other
+public code-hosting site. This repository should contain your code for solving the homework. If your solution includes
+code that is not in file format, please include these directly in the README file of your repository.
 
-> In case you don't get one option exactly, select the closest one 
+> In case you don't get one option exactly, select the closest one
 
 For the homework, we'll be working with the _green_ taxi dataset located here:
 
@@ -14,7 +16,8 @@ You may need to reference the link below to download via Python in Mage:
 
 ### Assignment
 
-The goal will be to construct an ETL pipeline that loads the data, performs some transformations, and writes the data to a database (and Google Cloud!).
+The goal will be to construct an ETL pipeline that loads the data, performs some transformations, and writes the data to
+a database (and Google Cloud!).
 
 - Create a new pipeline, call it `green_taxi_etl`
 - Add a data loader block and use Pandas to read data for the final quarter of 2020 (months `10`, `11`, `12`).
@@ -28,7 +31,8 @@ The goal will be to construct an ETL pipeline that loads the data, performs some
     - `vendor_id` is one of the existing values in the column (currently)
     - `passenger_count` is greater than 0
     - `trip_distance` is greater than 0
-- Using a Postgres data exporter (SQL or Python), write the dataset to a table called `green_taxi` in a schema `mage`. Replace the table if it already exists.
+- Using a Postgres data exporter (SQL or Python), write the dataset to a table called `green_taxi` in a schema `mage`.
+  Replace the table if it already exists.
 - Write your data as Parquet files to a bucket in GCP, partioned by `lpep_pickup_date`. Use the `pyarrow` library!
 - Schedule your pipeline to run daily at 5AM UTC.
 
@@ -45,7 +49,8 @@ Once the dataset is loaded, what's the shape of the data?
 
 ## Question 2. Data Transformation
 
-Upon filtering the dataset where the passenger count is greater than 0 _and_ the trip distance is greater than zero, how many rows are left?
+Upon filtering the dataset where the passenger count is greater than 0 _and_ the trip distance is greater than zero, how
+many rows are left?
 
 * 544,897 rows
 * 266,855 rows
@@ -92,7 +97,7 @@ Once exported, how many partitions (folders) are present in Google Cloud?
 
 * Form for submitting: https://courses.datatalks.club/de-zoomcamp-2024/homework/hw2
 * Check the link above to see the due date
-  
+
 ## Solution
 
 Will be added after the due date
