@@ -1,6 +1,92 @@
 <br />
 <div align="center">
   <a href="#">
+    <img src="./assets/orchestration.svg" height="150" alt="Orchestration Logo">
+  </a>
+
+<h1 align = "center">
+<b><i>Orchestration</i></b>
+</h1>
+
+  <p align="center">
+  </p>
+</div>
+<br />
+
+In the realm of data engineering, orchestrating complex workflows is essential for managing data pipelines efficiently.
+Orchestration tools play a pivotal role in coordinating and automating the execution of tasks within these workflows.
+Some popular tools in this domain are Apache Airflow, Luigi, Argo, Prefect & Mage.
+
+## Data Engineering Lifecycle
+
+![Data Engineering Lifecycle](assets/data_engineering_lifecycle.png)
+
+A large part of data engineering is extracting, transforming, and loading data between sources.
+
+Orchestration is a process of dependency management, facilitated through automation.
+
+The data orchestrator manages scheduling, triggering, monitoring and even resource allocation.
+
+Every workflow requires sequential steps.
+
+**Steps = tasks**
+
+**Workflows = DAGs/ pipeline**
+
+Orchestration is an undercurrent because it happens throughout the entire process while being a key component of it.
+
+## Qualities
+
+A good orchestrator handles:
+
+- Workflow management
+- Automation
+- Error handling
+- Recovery
+- Monitoring and alerting
+- Resource optimization
+- Observability
+- Debugging
+- Compliance and auditing
+- Developer Experience
+
+
+<br />
+<div align="center">
+  <a href="#">
+    <img src="./assets/mage.svg" height="200" alt="Mage Logo">
+  </a>
+
+<h1 align = "center">
+<b><i>Mage</i></b>
+</h1>
+
+  <p align="center">
+  </p>
+</div>
+<br />
+
+Mage is a Workflow Orchestration tool that allows you to build, run, and manage data pipelines for integrating and
+transforming data.
+It allows you to create real-time and batch pipelines to transform data using several programming languages, such as
+Python, SQL and R.
+
+# Core Abstractions
+
+![](assets/mage_capacities.png)
+
+- 🏢  **Project**: Like a repository on GitHub; this is where you write all your code.
+- 🪈  **Pipeline**: Contains references to all the blocks of code you want to run, charts for visualizing data, and
+  organizes the dependency between each block of code.
+- 🧱  **Block**: A file with code that can be executed independently or within a pipeline.
+- 🤓  **Data Product**:  Every block produces data after it’s been executed. These are called data products in Mage.
+- ⏰  **Trigger**:  A set of instructions that determine when or how a pipeline should run.
+- 🏃‍♂️  **Run Stores**: information about when it was started, its status, when it was completed, any runtime variables
+  used in the execution of the pipeline or block, etc.
+
+<br />
+<div align="center">
+  <a href="#">
     <img src="assets/bigquery.png" alt="Google BigQuery Logo"  height="200">
   </a>
 
